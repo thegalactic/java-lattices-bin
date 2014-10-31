@@ -13,7 +13,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-		<checkstyle.config.location>config/checkstyle.xml</checkstyle.config.location>
+		<checkstyle.config.location>src/checkstyle/config.xml</checkstyle.config.location>
 	</properties>
 
 	<dependencies>
@@ -57,6 +57,16 @@
 
 	<build>
 		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.2</version>
+				<configuration>
+					<compilerArgument>-Xlint</compilerArgument>
+				</configuration>
+			</plugin>
+
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>appassembler-maven-plugin</artifactId>

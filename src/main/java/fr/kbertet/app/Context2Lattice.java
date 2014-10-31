@@ -1,6 +1,6 @@
 package fr.kbertet.app;
 
-import static org.kohsuke.args4j.ExampleMode.ALL;
+import static org.kohsuke.args4j.OptionHandlerFilter.ALL;
 import org.kohsuke.args4j.CmdLineException;
 import org.kohsuke.args4j.CmdLineParser;
 import org.kohsuke.args4j.Option;
@@ -58,7 +58,7 @@ public class Context2Lattice {
 
         // if you have a wider console, you could increase the value;
         // here 80 is also the default
-        parser.setUsageWidth(80);
+        parser.getProperties().withUsageWidth(80);
 
         try {
             // parse the arguments.
