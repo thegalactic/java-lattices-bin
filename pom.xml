@@ -36,7 +36,6 @@
 	</dependencies>
 
 	<repositories>
-
 		<repository>
 			<id>java-lattices-mvn-repo</id>
 			<name>lattices repository</name>
