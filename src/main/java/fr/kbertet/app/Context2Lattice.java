@@ -5,7 +5,7 @@ import org.kohsuke.args4j.CmdLineException;
 import org.kohsuke.args4j.CmdLineParser;
 import org.kohsuke.args4j.Option;
 
-import fr.kbertet.lattice.Context;
+import fr.kbertet.context.Context;
 import fr.kbertet.lattice.ConceptLattice;
 
 import java.io.File;
