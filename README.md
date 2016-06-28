@@ -23,13 +23,13 @@ Usage
 $ ./target/appassembler/bin/galactic-context [options...]
  -i (--input)                           : input from this file
  -p (--precedence)                      : precedence graph
- -n (--closed-set-lattice-next-closure) : closed set lattice with next closure
- -b (--closed-set-lattice-Bordat)       : closed set lattice of the context with Bordat
+ -n (--closed-set-lattice-next-closure) : closed set lattice with next closure's algorithm
+ -b (--closed-set-lattice-Bordat)       : closed set lattice of the context with Bordat's algorithm
  -d (--dependence-graph)                : dependence graph
  -g (--minimal-generators)              : minimal generators
  -r (--canonical-direct-basis)          : canonical direct basis
- -c (--concept-lattice-Bordat)          : concept lattice of the context with Bordat
- -t (--table) TABLE                     : table of the concept lattice of the context
+ -c (--concept-lattice-Bordat)          : concept lattice of the context with Bordat's algorithm
+ -t (--table) TABLE                     : table of the concept lattice
  -a (--context-reduced)                 : context reduced
 ~~~
 

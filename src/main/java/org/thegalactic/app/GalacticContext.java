@@ -60,7 +60,7 @@ public class GalacticContext {
      * next closure file.
      */
     @Option(name = "-n",
-            usage = "closed set lattice with next closure",
+            usage = "closed set lattice with next closure's algorithm",
             metaVar = "CLOSED_SET_LATTICE_NEXT_CLOSURE",
             aliases = {"--closed-set-lattice-next-closure"},
             required = false
@@ -71,7 +71,7 @@ public class GalacticContext {
      * closed set lattice of the context with Bordat file.
      */
     @Option(name = "-b",
-            usage = "closed set lattice of the context with Bordat",
+            usage = "closed set lattice of the context with Bordat's algorithm",
             metaVar = "CLOSED_SET_LATTICE_BORDAT",
             aliases = {"--closed-set-lattice-Bordat"},
             required = false
@@ -115,7 +115,7 @@ public class GalacticContext {
      * concept lattice of the context with Bordat file.
      */
     @Option(name = "-c",
-            usage = "concept lattice of the context with Bordat",
+            usage = "concept lattice of the context with Bordat's algorithm",
             metaVar = "CONCEPT_LATTICE_BORDAT",
             aliases = {"--concept-lattice-Bordat"},
             required = false
@@ -126,7 +126,7 @@ public class GalacticContext {
      * table of the concept lattice of the context.
      */
     @Option(name = "-t",
-            usage = "table of the concept lattice of the context",
+            usage = "table of the concept lattice",
             metaVar = "TABLE",
             aliases = {"--table"},
             required = false
