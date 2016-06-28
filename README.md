@@ -35,7 +35,7 @@ $ ./target/appassembler/bin/galactic-context [options...]
 
 The options `-d`, `-g` and `-f` can only be used in conjunction with the option `-b`.
 
-The option `-t` can only be used in conjunction with the option `-r`
+The option `-t` can only be used in conjunction with the option `-c`
 
 You can use the dataset from http://www.upriss.org.uk/fca/examples.html. Special thanks to Uta Priss.
 
