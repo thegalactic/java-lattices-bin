@@ -20,32 +20,27 @@ Usage
 -----
 
 ~~~
-$ ./target/appassembler/bin/galactic-context
-galactic-context [options...]
- -i (--input) INPUT                     : input from this file
- -p (--precedence) PRECEDENCE_GRAPH     : precedence graph (default:
-                                          precedence-graph.dot)
- -n (--concept-lattice-next-closure)    : closed set lattice with next closure
- CLOSED_SET_LATTICE_NEXT_CLOSURE          (default: closed-set-lattice-next-clos
-                                          ure.dot)
- -b (--closed-set-lattice-Bordat)       : closed set lattice of the context
- CLOSED_SET_LATTICE_BORDAT                with Bordat (default: closed-set-latti
-                                          ce-Bordat.dot)
- -d (--dependence-graph)                : dependence graph (default:
- DEPENDENCE_GRAPH                         dependence-graph.dot)
- -g (--minimal-generators)              : minimal generators (default:
- MINIMAL_GENERATORS                       minimal-generators.txt)
- -r (--canonical-direct-basis)          : canonical direct basis (default:
- CANONICAL_DIRECT_BASIS                   canonical-direct-basis.txt)
- -c (--concept-lattice-Bordat)          : concept lattice of the context with
- CONCEPT_LATTICE_BORDAT                   Bordat (default: concept-lattice-Borda
-                                          t.dot)
- -t (--table) TABLE                     : table of the concept lattice of the
-                                          context (default: table.txt)
- -a (--context-reduced) REDUCED_CONTEXT : context reduced (default:
-                                          reduced-context.txt)
+$ ./target/appassembler/bin/galactic-context [options...]
+ -i (--input)                           : input from this file
 
-  Example: galactic-context -i (--input) INPUT -p (--precedence) PRECEDENCE_GRAPH -n (--concept-lattice-next-closure) CLOSED_SET_LATTICE_NEXT_CLOSURE -b (--closed-set-lattice-Bordat) CLOSED_SET_LATTICE_BORDAT -d (--dependence-graph) DEPENDENCE_GRAPH -g (--minimal-generators) MINIMAL_GENERATORS -r (--canonical-direct-basis) CANONICAL_DIRECT_BASIS -c (--concept-lattice-Bordat) CONCEPT_LATTICE_BORDAT -t (--table) TABLE -a (--context-reduced) REDUCED_CONTEXT
+ -p (--precedence)                      : precedence graph
+                                          default: precedence-graph.dot
+ -n (--concept-lattice-next-closure)    : closed set lattice with next closure
+                                          default: closed-set-lattice-next-closure.dot
+ -b (--closed-set-lattice-Bordat)       : closed set lattice of the context with Bordat
+                                          default: closed-set-lattice-Bordat.dot
+ -d (--dependence-graph)                : dependence graph
+                                          default: dependence-graph.dot
+ -g (--minimal-generators)              : minimal generators
+                                          default: minimal-generators.txt
+ -r (--canonical-direct-basis)          : canonical direct basis
+                                          default: canonical-direct-basis.txt
+ -c (--concept-lattice-Bordat)          : concept lattice of the context with Bordat
+                                          default: concept-lattice-Bordat.dot
+ -t (--table) TABLE                     : table of the concept lattice of the context
+                                          default: table.txt
+ -a (--context-reduced) REDUCED_CONTEXT : context reduced
+                                          default: reduced-context.txt
 ~~~
 
 You can use the dataset from http://www.upriss.org.uk/fca/examples.html. Special thanks to Uta Priss.
