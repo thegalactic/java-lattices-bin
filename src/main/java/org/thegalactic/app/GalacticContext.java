@@ -54,7 +54,7 @@ public class GalacticContext {
             aliases = {"--precedence"},
             required = false
     )
-    private File precedence = new File("precedence-graph.dot");
+    private File precedence;
 
     /**
      * next closure file.
@@ -62,10 +62,10 @@ public class GalacticContext {
     @Option(name = "-n",
             usage = "closed set lattice with next closure",
             metaVar = "CLOSED_SET_LATTICE_NEXT_CLOSURE",
-            aliases = {"--concept-lattice-next-closure"},
+            aliases = {"--closed-set-lattice-next-closure"},
             required = false
     )
-    private File nextClosure = new File("closed-set-lattice-next-closure.dot");
+    private File nextClosure;
 
     /**
      * closed set lattice of the context with Bordat file.
@@ -76,7 +76,7 @@ public class GalacticContext {
             aliases = {"--closed-set-lattice-Bordat"},
             required = false
     )
-    private File closedSetLatticeBordat = new File("closed-set-lattice-Bordat.dot");
+    private File closedSetLatticeBordat;
 
     /**
      * dependency graph.
@@ -87,7 +87,7 @@ public class GalacticContext {
             aliases = {"--dependence-graph"},
             required = false
     )
-    private File dependenceGraph = new File("dependence-graph.dot");
+    private File dependenceGraph;
 
     /**
      * minimal generators.
@@ -98,7 +98,7 @@ public class GalacticContext {
             aliases = {"--minimal-generators"},
             required = false
     )
-    private File minimalGenerators = new File("minimal-generators.txt");
+    private File minimalGenerators;
 
     /**
      * canonical direct basis.
@@ -109,7 +109,7 @@ public class GalacticContext {
             aliases = {"--canonical-direct-basis"},
             required = false
     )
-    private File canonicalDirectBasis = new File("canonical-direct-basis.txt");
+    private File canonicalDirectBasis;
 
     /**
      * concept lattice of the context with Bordat file.
@@ -120,7 +120,7 @@ public class GalacticContext {
             aliases = {"--concept-lattice-Bordat"},
             required = false
     )
-    private File conceptLatticeBordat = new File("concept-lattice-Bordat.dot");
+    private File conceptLatticeBordat;
 
     /**
      * table of the concept lattice of the context.
@@ -131,7 +131,7 @@ public class GalacticContext {
             aliases = {"--table"},
             required = false
     )
-    private File table = new File("table.txt");
+    private File table;
 
     /**
      * concept lattice of the context with Bordat file.
@@ -142,7 +142,7 @@ public class GalacticContext {
             aliases = {"--context-reduced"},
             required = false
     )
-    private File reduceContext = new File("reduced-context.txt");
+    private File reduceContext;
 
     /**
      * Main method.

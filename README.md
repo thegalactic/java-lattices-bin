@@ -22,26 +22,20 @@ Usage
 ~~~
 $ ./target/appassembler/bin/galactic-context [options...]
  -i (--input)                           : input from this file
-
  -p (--precedence)                      : precedence graph
-                                          default: precedence-graph.dot
- -n (--concept-lattice-next-closure)    : closed set lattice with next closure
-                                          default: closed-set-lattice-next-closure.dot
+ -n (--closed-set-lattice-next-closure) : closed set lattice with next closure
  -b (--closed-set-lattice-Bordat)       : closed set lattice of the context with Bordat
-                                          default: closed-set-lattice-Bordat.dot
  -d (--dependence-graph)                : dependence graph
-                                          default: dependence-graph.dot
  -g (--minimal-generators)              : minimal generators
-                                          default: minimal-generators.txt
  -r (--canonical-direct-basis)          : canonical direct basis
-                                          default: canonical-direct-basis.txt
  -c (--concept-lattice-Bordat)          : concept lattice of the context with Bordat
-                                          default: concept-lattice-Bordat.dot
  -t (--table) TABLE                     : table of the concept lattice of the context
-                                          default: table.txt
- -a (--context-reduced) REDUCED_CONTEXT : context reduced
-                                          default: reduced-context.txt
+ -a (--context-reduced)                 : context reduced
 ~~~
+
+The options `-d`, `-g` and `-f` can only be used in conjunction with the option `-b`.
+
+The option `-t` can only be used in conjunction with the option `-r`
 
 You can use the dataset from http://www.upriss.org.uk/fca/examples.html. Special thanks to Uta Priss.
 
