@@ -71,7 +71,7 @@ public class GalacticContext {
      * closed set lattice of the context with Bordat file.
      */
     @Option(name = "-b",
-            usage = "closed set lattice of the context with Bordat's algorithm",
+            usage = "closed set lattice with Bordat's algorithm",
             metaVar = "CLOSED_SET_LATTICE_BORDAT",
             aliases = {"--closed-set-lattice-Bordat"},
             required = false
@@ -115,7 +115,7 @@ public class GalacticContext {
      * concept lattice of the context with Bordat file.
      */
     @Option(name = "-c",
-            usage = "concept lattice of the context with Bordat's algorithm",
+            usage = "concept lattice with Bordat's algorithm",
             metaVar = "CONCEPT_LATTICE_BORDAT",
             aliases = {"--concept-lattice-Bordat"},
             required = false
