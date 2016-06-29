@@ -33,7 +33,7 @@ $ ./target/appassembler/bin/galactic-context [options...]
  -a (--context-reduced)                 : context reduced
 ~~~
 
-The options `-d`, `-g` and `-f` can only be used in conjunction with the option `-b`.
+The options `-d`, `-g` and `-r` can only be used in conjunction with the option `-b`.
 
 The option `-t` can only be used in conjunction with the option `-c`
 
