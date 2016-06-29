@@ -25,9 +25,9 @@ import org.kohsuke.args4j.Option;
 import org.kohsuke.args4j.ParserProperties;
 
 import org.thegalactic.context.Context;
-import org.thegalactic.dgraph.DGraph;
+import org.thegalactic.dgraph.ConcreteDGraph;
 import org.thegalactic.lattice.ConceptLattice;
-import org.thegalactic.lattice.ImplicationalSystem;
+import org.thegalactic.rule.ImplicationalSystem;
 
 /**
  * This class converts a context file to lattice file in dot format.
@@ -187,7 +187,7 @@ public class GalacticContext {
         try {
             Context ctx = new Context(in.getPath());
             if (precedence != null) {
-                DGraph graph = ctx.precedenceGraph();
+                ConcreteDGraph graph = ctx.precedenceGraph();
                 graph.save(precedence.getPath());
             }
             if (nextClosure != null) {
@@ -198,7 +198,7 @@ public class GalacticContext {
                 ConceptLattice lattice = ctx.closedSetLattice(true);
                 lattice.save(closedSetLatticeBordat.getPath());
                 if (dependenceGraph != null) {
-                    DGraph graph = lattice.getDependencyGraph();
+                    ConcreteDGraph graph = lattice.getDependencyGraph();
                     graph.save(dependenceGraph.getPath());
                 }
                 if (minimalGenerators != null) {
